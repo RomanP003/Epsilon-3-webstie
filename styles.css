@@ -95,9 +95,66 @@
     display: block;
 }
 
-.wrapper {
-    margin: 100px auto;
+.wrapper-features {
+    margin: 200px auto;
     width: 1000px;
+}
+
+.wrapper-index {
+    margin: 85px auto;
+    width: 1100px;
+}
+
+.button {
+    background-color: #ddd;
+    border: none;
+    color: black;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 16px;
+}
+
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+  
+
+.top-left {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+}
+
+.container .btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #555;
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+.image-wrapper {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 
 *{box-sizing: border-box;}
