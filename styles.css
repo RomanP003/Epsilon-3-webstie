@@ -106,7 +106,7 @@
 }
 
 .button {
-    background-color: #ddd;
+    background-color: #89CFF0;
     border: none;
     color: black;
     padding: 10px 20px;
@@ -155,6 +155,13 @@ img {
     width: 100%;
     height: 100%;
     object-fit: contain;
+}
+
+.bottom-bar {
+    background-color: #89CFF0;
+    bottom: 0;
+    width: 100%;
+    transition: bottom 0.3s;
 }
 
 *{box-sizing: border-box;}
