@@ -95,6 +95,11 @@
     display: block;
 }
 
+.wrapper {
+    margin: 100px auto;
+    width: 1000px;
+}
+
 *{box-sizing: border-box;}
 
 /* Slideshow container */
