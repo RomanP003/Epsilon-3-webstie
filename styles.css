@@ -95,11 +95,6 @@
     display: block;
 }
 
-.wrapper-features {
-    margin: 200px auto;
-    width: 1000px;
-}
-
 .wrapper-index {
     margin: 85px auto;
     width: 1100px;
@@ -166,7 +161,25 @@ img {
 
 *{box-sizing: border-box;}
 
-/* Slideshow container */
+/* styling for options.html */
+
+div.scroll-container {
+    background-color: blanchedalmond;
+    overflow: auto;
+    white-space: nowrap;
+    padding: 10px;
+}
+
+div.scroll-container img {
+    padding: 10px;
+}
+
+.wrapper-options {
+    margin: 85px auto;
+    width: 1100px;
+}
+
+/* Slideshow styling */
 .slideshow-container {
     max-width: 1000px;
     position: relative;

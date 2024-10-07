@@ -7,7 +7,7 @@
         <link rel = "stylesheet" type="text/css" href="styles.css">
     </head>
 
-    <body>
+    <body style="background-color: blanchedalmond;">
         <header class="header">
             <a href="#" class="logo">Epsilon 3</a>
 
@@ -28,70 +28,96 @@
 
         </header>
 
-        <div class="slideshow-container">
+        <div class="wrapper-options">
 
-            <div class="mySlides fade">
-                <div class="numbertext">1 / 4</div>
-                <img src="images/SakuraSony.jpg" style="width:100%">
+            <h1 style="text-align: center; font-size: 36px; background-color: blanchedalmond;">Epsilon 3: 2 Select listening Options</h1>
+            <p style="text-align: center; background-color: blanchedalmond;">Epslion 3's new product line has two selection options: An over the ear headpone dubbed Epslion 3-1.<br>
+            We are also introducing a sibling to the over the ear option in Epsilon 3-2.<br>
+            Epsilon 3-2 provides a similar listening experience from an in ear headphone option for listeners who are more active.<br>
+            Scroll left for a look at Epsilon 3-2. Scroll down for a look at how the Epsilon Product line might look on you!</p>
+
+
+            <div class="scroll-container">
+                    <img src="images/Headphones.webp" alt="Over Ear Epsilon 3">
+                    <img src="images/inEarHeadpones.webp" alt="In Ear Epsilon 3">
             </div>
 
-            <div class="mySlides fade">
-                <div class="numbertext">2 / 4</div>
-                <img src="images/ChaewonSony.jpg" style="width:100%">
+            <br>
+            <h2 style="text-align: center;">Epsilon 3 Listen in Style</h2>
+            <p style="text-align: center;">Click through the slideshow below for looks at Epsilon 3-1 in use!
+                <br>If you would like more information on the different features between epsilon 3-1 and 3-2 click below.
+            </p>
+            <a href="features.html">
+                <div class="container">
+                    <button class="button">Epsilon 3 Features</button>
+                </div>
+            </a>
+    
+            <div class="slideshow-container">
+    
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 4</div>
+                    <img src="images/SakuraSony.jpg" style="width: 100%;">
+                </div>
+    
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 4</div>
+                    <img src="images/ChaewonSony.jpg" style="width: 100%;">
+                </div>
+    
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 4</div>
+                    <img src="images/YunjinSony.jpg" style="width: 100%;">
+                </div>
+    
+                <div class="mySlides fade">
+                    <div class="numbertext">4 / 4</div>
+                    <img src="images/KazuhaSony.jpg" style="width: 100%;">
+                </div>
+    
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
             </div>
-
-            <div class="mySlides fade">
-                <div class="numbertext">3 / 4</div>
-                <img src="images/YunjinSony.jpg" style="width:100%">
+            <br>
+    
+            <div style="text-align: center;">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
             </div>
-
-            <div class="mySlides fade">
-                <div class="numbertext">4 / 4</div>
-                <img src="images/KazuhaSony.jpg" style="width:100%">
-            </div>
-
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
-        </div>
-        <br>
-
-        <div style="text-align: center;">
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
-            <span class="dot" onclick="currentSlide(4)"></span>
-        </div>
-
-        <script>
-            let slideIndex = 1;
-            window.onload = function() {
-                showSlides(slideIndex);
-            }
-
-            function plusSlides(n) {
-                showSlides(slideIndex += n);
-            }
-
-            function currentSlide(n) {
-                showSlides(slideIndex = n);
-            }
-
-            function showSlides(n) {
-                let i;
-                let slides = document.getElementsByClassName("mySlides");
-                let dots = document.getElementsByClassName("dot");
-                if (n > slides.length) {slideIndex = 1}
-                if (n < 1) {slideIndex = slides.length}
-                for(i=0; i < slides.length; i++) {
-                    slides[i].style.display = "none";
+    
+            <script>
+                let slideIndex = 1;
+                window.onload = function() {
+                    showSlides(slideIndex);
                 }
-                for(i=0; i < dots.length; i++) {
-                    dots[i].className = dots[i].className.replace(" active", "");
+    
+                function plusSlides(n) {
+                    showSlides(slideIndex += n);
                 }
-                slides[slideIndex-1].style.display = "block";
-                dots[slideIndex-1].className += " active";
-            }
-        </script>
+    
+                function currentSlide(n) {
+                    showSlides(slideIndex = n);
+                }
+    
+                function showSlides(n) {
+                    let i;
+                    let slides = document.getElementsByClassName("mySlides");
+                    let dots = document.getElementsByClassName("dot");
+                    if (n > slides.length) {slideIndex = 1}
+                    if (n < 1) {slideIndex = slides.length}
+                    for(i=0; i < slides.length; i++) {
+                        slides[i].style.display = "none";
+                    }
+                    for(i=0; i < dots.length; i++) {
+                        dots[i].className = dots[i].className.replace(" active", "");
+                    }
+                    slides[slideIndex-1].style.display = "block";
+                    dots[slideIndex-1].className += " active";
+                }
+            </script>
+        </div>
 
     </body>
 </html>
